@@ -39,7 +39,7 @@ const paths = [
   },
   {
     title: "Tchau, Tchau, Tetê",
-    description: "Desmame gentil, no ritmo da sua família.",
+    description: "Desmame gentil, total ou parcial.",
     href: "https://amamentefeliz.com.br/tchautchautete?src=bio-ttt&utm_source=instagram&utm_medium=bio&utm_campaign=ttt&utm_content=minisite",
   },
   {
