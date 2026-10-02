@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, CalendarHeart, Mail, MessageCircle } from "lucide-react";
 
 import dudaPortrait from "@/assets/duda-bertocco.asset.json";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -85,12 +86,16 @@ function Index() {
           <p className="mt-3 text-[13.5px] leading-relaxed text-primary-foreground/85">
             Seu corpo pode produzir mais leite. Aprenda a estimular do jeito certo, com segurança e sem culpa.
           </p>
-          <Button asChild className="mt-5 h-12 w-full rounded-full bg-background px-4 text-primary shadow-none hover:bg-background/90">
-            <a href="https://amamentefeliz.com.br/metodomaisleitehoje?utm_source=instagram&utm_medium=bio&utm_campaign=mlh&utm_content=minisite">
-              <span>Quero produzir mais leite</span>
-              <ArrowUpRight aria-hidden="true" />
-            </a>
-          </Button>
+          <a
+            href="https://amamentefeliz.com.br/metodomaisleitehoje?utm_source=instagram&utm_medium=bio&utm_campaign=mlh&utm_content=minisite"
+            className={cn(
+              buttonVariants(),
+              "mt-5 h-12 w-full rounded-full bg-background px-4 text-primary shadow-none hover:bg-background/90",
+            )}
+          >
+            <span>Quero produzir mais leite</span>
+            <ArrowUpRight aria-hidden="true" />
+          </a>
         </section>
 
         <section aria-labelledby="outros-caminhos" className="rise flex flex-col gap-2 [animation-delay:180ms]">
