@@ -62,7 +62,7 @@
   --color-glass: var(--glass);
   --color-glass-strong: var(--glass-strong);
   --color-glass-border: var(--glass-border);
-  --font-display: "Instrument Serif", serif;
+  --font-display: "Times New Roman", Times, serif;
   --font-body: "Work Sans", sans-serif;
   --shadow-glass: var(--shadow-glass);
   --shadow-feature: var(--shadow-feature);
