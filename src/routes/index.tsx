@@ -57,17 +57,17 @@ function Index() {
       </div>
 
       <main className="relative flex min-h-screen w-full max-w-[430px] flex-col gap-3 px-4 pb-10 pt-6 sm:py-10">
-        <header className="rise flex items-center gap-4 rounded-[26px] border border-glass-border bg-glass p-4 shadow-glass backdrop-blur-xl">
+        <header className="rise flex items-center gap-4 px-1 pt-2">
           <img
             src={dudaPortrait.url}
             alt="Duda Bertocco"
             width={160}
             height={160}
-            className="size-[74px] shrink-0 object-cover"
+            className="size-[80px] shrink-0 object-cover"
           />
           <div className="min-w-0">
-            <h1 className="font-display text-[27px] leading-none">Duda Bertocco</h1>
-            <p className="mt-1 text-[13px] leading-snug text-foreground/70">
+            <h1 className="font-display text-[30px] leading-none">Duda Bertocco</h1>
+            <p className="mt-2 text-[13px] leading-snug text-foreground/70">
               Consultora de amamentação · Psicóloga perinatal · Doula
             </p>
             <p className="mt-1 text-[10px] font-medium uppercase text-foreground/50">CRP 05/67778</p>
