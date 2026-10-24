@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Cursos e consultoria com Duda Bertocco para produzir mais leite, amamentar sem dor, voltar ao trabalho e desmamar com respeito.",
+          "Cursos e consultoria com Duda Bertocco para produzir mais leite, amamentar sem dor e desmamar com respeito.",
       },
       { property: "og:title", content: "Duda Bertocco | Consultoria de Amamentação" },
       {
@@ -28,11 +28,6 @@ export const Route = createFileRoute("/")({
 
 const paths = [
   {
-    title: "Trabalho sim, desmame não",
-    description: "Volte ao trabalho sem abrir mão do aleitamento.",
-    href: "https://amamentefeliz.com.br/trabalhosimdesmamenao?src=bio-tsdn&utm_source=instagram&utm_medium=bio&utm_campaign=tsdn&utm_content=minisite",
-  },
-  {
     title: "Amamente sem dor",
     description: "Entenda o que está errado e como corrigir.",
     href: "https://amamentefeliz.com.br/amamentesemdor?src=bio-asd&utm_source=instagram&utm_medium=bio&utm_campaign=asd&utm_content=minisite",
@@ -41,11 +36,6 @@ const paths = [
     title: "Tchau, Tchau, Tetê",
     description: "Desmame gentil, total ou parcial.",
     href: "https://amamentefeliz.com.br/tchautchautete?src=bio-ttt&utm_source=instagram&utm_medium=bio&utm_campaign=ttt&utm_content=minisite",
-  },
-  {
-    title: "Paz no Peito",
-    description: "Prepare-se antes e depois do bebê chegar.",
-    href: "https://amamentefeliz.com.br/paznopeito?src=bio-pnp&utm_source=instagram&utm_medium=bio&utm_campaign=pnp&utm_content=minisite",
   },
 ];
 
