@@ -10,10 +10,10 @@ function inlineScripts() {
 }
 
 describe("Analytics installed on the page", () => {
-  it("loads Microsoft Clarity for project xmvfo5noq0", () => {
+  it("loads Microsoft Clarity for project z2tt0pf0q5", () => {
     const js = inlineScripts();
     expect(js).toContain("clarity.ms/tag/");
-    expect(js).toContain("xmvfo5noq0");
+    expect(js).toContain("z2tt0pf0q5");
   });
 
   it("loads Google Tag Manager for container GTM-WFLHGVNM", () => {

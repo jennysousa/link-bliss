@@ -8,13 +8,13 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Duda Bertocco | Consultoria de Amamentação" },
+      { title: "Duda Bertocco - Amamente Feliz" },
       {
         name: "description",
         content:
           "Cursos e consultoria com Duda Bertocco para produzir mais leite, amamentar sem dor e desmamar com respeito.",
       },
-      { property: "og:title", content: "Duda Bertocco | Consultoria de Amamentação" },
+      { property: "og:title", content: "Duda Bertocco - Amamente Feliz" },
       {
         property: "og:description",
         content: "Apoio para cada fase da amamentação, com informação e acolhimento.",
