@@ -1,0 +1,26 @@
+import { describe, expect, it } from "vitest";
+
+import { Route } from "@/routes/__root";
+
+type HeadFn = () => { scripts?: Array<{ children?: string }> };
+
+function inlineScripts() {
+  const head = (Route.options as { head?: HeadFn }).head?.();
+  return (head?.scripts ?? []).map((script) => script.children ?? "").join("\n");
+}
+
+describe("Analytics installed on the page", () => {
+  it("loads Microsoft Clarity for project xmvfo5noq0", () => {
+    const js = inlineScripts();
+    expect(js).toContain("clarity.ms/tag/");
+    expect(js).toContain("xmvfo5noq0");
+  });
+
+  it("loads Google Tag Manager for container GTM-WFLHGVNM", () => {
+    const js = inlineScripts();
+    expect(js).toContain("googletagmanager.com/gtm.js");
+    expect(js).toContain("GTM-WFLHGVNM");
+    // The dataLayer query must reach the container intact, or tags stop firing.
+    expect(js).toContain("'&l='+l");
+  });
+});
