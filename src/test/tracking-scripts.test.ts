@@ -2,10 +2,10 @@ import { describe, expect, it } from "vitest";
 
 import { Route } from "@/routes/__root";
 
-type HeadFn = () => { scripts?: Array<{ children?: string }> };
+type HeadFn = (ctx: never) => { scripts?: Array<{ children?: string }> };
 
 function inlineScripts() {
-  const head = (Route.options as { head?: HeadFn }).head?.();
+  const head = (Route.options as unknown as { head?: HeadFn }).head?.({} as never);
   return (head?.scripts ?? []).map((script) => script.children ?? "").join("\n");
 }
 
